@@ -13,8 +13,12 @@ Page({
 
     // 用户登录示例
     login: function() {
-        if (this.data.logged) return
-
+        
+        if (this.data.logged) {
+            console.log('logged...')
+            return
+        }
+        
         util.showBusy('正在登录')
         var that = this
 

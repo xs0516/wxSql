@@ -1,9 +1,9 @@
 //app.js
-var qcloud = require('./vendor/wafer2-client-sdk/index')
-var config = require('./config')
+import { setLoginUrl } from "./vendor/wafer2-client-sdk/index";
+import { service } from "./config";
 
 App({
     onLaunch: function () {
-        qcloud.setLoginUrl(config.service.loginUrl)
+        setLoginUrl(service.loginUrl)
     }
 })
