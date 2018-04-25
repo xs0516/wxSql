@@ -70,6 +70,8 @@ var defaultOptions = {
  * @param {Function} options.fail(error) 登录失败后的回调函数，参数 error 错误信息
  */
 var login = function login(options) {
+    // console.log('login-option:',options);
+    
     options = utils.extend({}, defaultOptions, options);
 
     if (!defaultOptions.loginUrl) {
